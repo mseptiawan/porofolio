@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+/* Mengatur dark mode agar aktif saat ada class 'dark' di root (html/body) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Opsional: Memberikan warna dasar transisi agar halus saat ganti tema */
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-slate-900 text-white;
+  }
+}

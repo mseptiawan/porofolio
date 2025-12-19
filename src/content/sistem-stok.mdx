@@ -1,0 +1,123 @@
+import {
+  Database,
+  Activity,
+  AlertTriangle,
+  CheckCircle,
+  TrendingUp,
+} from "lucide-react";
+
+# Case Study: Digitalisasi Arsitektur Sistem Stok Barang
+
+**Analyst:** Alan Denis  
+**Client:** Gudang XYZ (Logistik & Distribusi)
+
+---
+
+## 1. Identifikasi Masalah (Problem Statement)
+
+Sebelum sistem diimplementasikan, audit operasional menunjukkan efisiensi yang sangat rendah akibat metode pencatatan manual:
+
+- **Data Silo:** Informasi stok hanya tersedia di buku besar fisik, sulit diakses secara _real-time_ oleh departemen pengadaan.
+- **Human Error:** Tingkat ketidakakuratan data mencapai **15%** akibat kesalahan input manual.
+- **Critical Downtime:** Proses _stock opname_ yang memakan waktu 3 hari menghentikan seluruh proses distribusi.
+
+---
+
+## 2. Analisis & Perancangan Sistem
+
+Sebagai analis, saya merancang ulang alur kerja menggunakan pendekatan **Event-Driven Architecture**:
+
+### Skema Alur Data (Data Flow)
+
+### Fitur Utama & Logika Bisnis
+
+1. **Real-Time Synchronicity**: Menggunakan trigger database untuk memperbarui status stok setiap kali transaksi `IN` atau `OUT` divalidasi.
+2. **Threshold Monitoring**: Implementasi algoritma _Safety Stock_ untuk menentukan titik pemesanan ulang (_Reorder Point_).
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+  <div className="p-4 border rounded-xl bg-slate-50 dark:bg-slate-800">
+    <div className="flex items-center gap-2 mb-2 text-indigo-500">
+      <Activity size={20} />
+      <span className="font-bold">Inventory Tracking</span>
+    </div>
+    Pelacakan SKU menggunakan barcode scanner yang terintegrasi langsung ke API pusat.
+  </div>
+  <div className="p-4 border rounded-xl bg-slate-50 dark:bg-slate-800">
+    <div className="flex items-center gap-2 mb-2 text-amber-500">
+      <AlertTriangle size={20} />
+      <span className="font-bold">Smart Alert</span>
+    </div>
+    Notifikasi otomatis via Dashboard & Email saat stok menyentuh batas kritis.
+  </div>
+</div>
+
+---
+
+## 3. Spesifikasi Teknis (Tech Stack)
+
+Arsitektur yang dibangun mengutamakan integritas data dan kecepatan akses:
+
+- **Database:** PostgreSQL (Relational) untuk menjamin _ACID compliance_.
+- **Backend:** Node.js dengan logika validasi stok yang ketat di level server.
+- **Frontend:** React Dashboard dengan visualisasi data stok yang interaktif.
+
+---
+
+## 4. Hasil & Dampak (Key Results)
+
+Pasca implementasi selama 6 bulan, sistem memberikan hasil yang terukur:
+
+<div className="overflow-x-auto my-8">
+  <table className="w-full border-collapse border border-slate-200 dark:border-slate-700">
+    <thead>
+      <tr className="bg-slate-50 dark:bg-slate-800">
+        <th className="border border-slate-200 dark:border-slate-700 p-3 text-left">
+          Metrik
+        </th>
+        <th className="border border-slate-200 dark:border-slate-700 p-3 text-left">
+          Sebelum
+        </th>
+        <th className="border border-slate-200 dark:border-slate-700 p-3 text-left">
+          Sesudah
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border border-slate-200 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">
+          Durasi Opname
+        </td>
+        <td className="border border-slate-200 dark:border-slate-700 p-3">
+          3 Hari
+        </td>
+        <td className="border border-slate-200 dark:border-slate-700 p-3 font-bold text-emerald-500">
+          4 Jam
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-slate-200 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">
+          Akurasi Data
+        </td>
+        <td className="border border-slate-200 dark:border-slate-700 p-3">
+          85%
+        </td>
+        <td className="border border-slate-200 dark:border-slate-700 p-3 font-bold text-emerald-500">
+          99.8%
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div className="mt-8 p-6 bg-indigo-600 rounded-2xl text-white">
+  <div className="flex items-center gap-3 mb-2">
+    <TrendingUp size={24} />
+    <span className="text-xl font-bold">Analyst Verdict</span>
+  </div>
+  "Sistem ini bukan sekadar alat pencatat, melainkan instrumen pengambilan keputusan
+  bagi manajemen untuk menghindari *overstocking* dan mengoptimalkan arus kas gudang."
+</div>
+
+---
+
+> **Note:** Proyek ini membuktikan bahwa transformasi digital sederhana pada level database dapat menyelesaikan masalah operasional yang masif.
