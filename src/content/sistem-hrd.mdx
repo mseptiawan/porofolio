@@ -1,0 +1,108 @@
+import {
+  Users,
+  Clock,
+  CreditCard,
+  ShieldCheck,
+  ChevronRight,
+} from "lucide-react";
+
+# Case Study: Transformasi Sistem Manajemen SDM (HRIS)
+
+**Analyst:** Alan Denis
+
+---
+
+## 1. Perbandingan Efisiensi (Data Comparison)
+
+{/* Header Tabel */}
+
+<div className="hidden md:grid grid-cols-4 gap-4 p-4 bg-slate-100 dark:bg-slate-800 rounded-t-xl font-bold border-b border-slate-200 dark:border-slate-700">
+  <div>Proses Bisnis</div>
+  <div>Metode Manual</div>
+  <div>Sistem Baru</div>
+  <div>Efisiensi</div>
+</div>
+
+{/* Row 1 */}
+
+<div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 border-b border-slate-100 dark:border-slate-800 items-center hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors">
+  <div className="font-bold md:font-normal">Rekap Absensi</div>
+  <div className="text-slate-500">16 Jam / Bulan</div>
+  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">
+    Otomatis (Real-time)
+  </div>
+  <div className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold px-2 py-1 rounded w-fit">
+    100%
+  </div>
+</div>
+
+{/* Row 2 */}
+
+<div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 border-b border-slate-100 dark:border-slate-800 items-center hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors">
+  <div className="font-bold md:font-normal">Perhitungan Gaji</div>
+  <div className="text-slate-500">5 Hari Kerja</div>
+  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">
+    30 Menit
+  </div>
+  <div className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold px-2 py-1 rounded w-fit">
+    98%
+  </div>
+</div>
+
+{/* Row 3 */}
+
+<div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 border-b border-slate-100 dark:border-slate-800 rounded-b-xl items-center hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors">
+  <div className="font-bold md:font-normal">Pengajuan Cuti</div>
+  <div className="text-slate-500">2 Hari (Kertas)</div>
+  <div className="text-indigo-600 dark:text-indigo-400 font-semibold">
+    5 Menit (App)
+  </div>
+  <div className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold px-2 py-1 rounded w-fit">
+    99%
+  </div>
+</div>
+
+---
+
+## 2. Arsitektur & Fitur Utama
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div className="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="p-2 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg text-indigo-600 dark:text-indigo-400">
+        <Clock size={24} />
+      </div>
+      <h3 className="font-bold text-lg">Absensi Bio-Sync</h3>
+    </div>
+    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+      Integrasi API langsung dengan terminal sidik jari (fingerprint) untuk mencegah kecurangan data kehadiran karyawan.
+    </p>
+  </div>
+
+  <div className="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="p-2 bg-emerald-100 dark:bg-emerald-900/40 rounded-lg text-emerald-600 dark:text-emerald-400">
+        <CreditCard size={24} />
+      </div>
+      <h3 className="font-bold text-lg">Payroll Engine</h3>
+    </div>
+    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+      Kalkulasi gaji otomatis termasuk potongan PPh 21, BPJS, dan bonus prestasi tanpa perlu input manual di spreadsheet.
+    </p>
+  </div>
+</div>
+
+---
+
+## 3. Kesimpulan Analis
+
+Digitalisasi sistem HRD ini bukan sekadar mengganti kertas dengan layar, melainkan tentang membangun **Integritas Data**. Dengan data yang akurat, perusahaan dapat mengambil keputusan strategis terkait performa karyawan dengan lebih cepat.
+
+<div className="mt-10 p-6 bg-slate-900 dark:bg-indigo-950 rounded-2xl text-white">
+  <div className="flex items-center gap-3 mb-4 text-indigo-400">
+    <ShieldCheck size={28} />
+    <span className="text-xl font-bold">Security Compliance</span>
+  </div>
+  Data karyawan dienkripsi menggunakan standar AES-256 untuk menjamin kerahasiaan
+  informasi pribadi dan detail penggajian.
+</div>
