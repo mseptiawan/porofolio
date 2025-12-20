@@ -2,27 +2,27 @@ import { Link } from "react-router-dom";
 
 const webProjects = [
   {
-    date: "Mar 2025",
+    date: "Nov 2025",
     title: "BJB Rental Mobil Palembang",
     slug: "bjb-rental-mobil-palembang",
   },
   {
-    date: "Feb 2025",
+    date: "Oct 2025",
     title: "Palembiz – Direktori UMKM Palembang",
     slug: "palembiz-direktori-umkm",
   },
   {
-    date: "Dec 2024",
+    date: "Feb 2025",
     title: "Sistem Insentif Promotor Changhong",
     slug: "sistem-insentif-promotor-changhong",
   },
   {
-    date: "Jan 2025",
+    date: "Nov 2025",
     title: "Marketplace Jasa Receh",
     slug: "jasa-receh-marketplace",
   },
   {
-    date: "Nov 2024",
+    date: "August 2024",
     title: "Blog CMS Laravel – Pemenang Karir",
     slug: "blog-cms-laravel",
   },

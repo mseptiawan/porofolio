@@ -4,12 +4,12 @@ const webProjects = [
   {
     date: "October 2025",
     title: "1st Place Winner – UI/UX Competition at Rafatech 2025",
-    slug: "ui-ux",
+    slug: "uiuxdesigner-bajoo",
   },
   {
     date: "October 2025",
     title: "Finalist – Web Development Competition at Rafatech 2025",
-    slug: "web-development",
+    slug: "finaliswebsite",
   },
 ];
 

@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"; // Import Link
 
 const projects = [
   {
-    title: "Consultation for Freelancer",
+    title: "Sistem Insentif Promotor",
     slug: "sistem-stok", // Ini harus sama dengan nama file mdx kamu
     description:
-      "Guided a freelance graphic designer in organizing client projects in Notion.",
+      "Menganalisa aktifitas pemberian insentif pada PT Changhong Electric Indonesia yang suka error dan menyebabkan kehilangan data.",
   },
   {
-    title: "Custom Workspace for Content Creator",
+    title: "Sistem Stok",
     slug: "sistem-hrd", // Ini harus sama dengan nama file mdx kamu
     description:
       "Created a custom Notion workspace to manage multiple social media channels and projects.",
