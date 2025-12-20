@@ -2,37 +2,22 @@ import { Link } from "react-router-dom";
 
 const webProjects = [
   {
-    date: "Mar 2025",
-    title: "BJB Rental Mobil Palembang",
-    slug: "bjb-rental-mobil-palembang",
+    date: "October 2025",
+    title: "1st Place Winner – UI/UX Competition at Rafatech 2025",
+    slug: "ui-ux",
   },
   {
-    date: "Feb 2025",
-    title: "Palembiz – Direktori UMKM Palembang",
-    slug: "palembiz-direktori-umkm",
-  },
-  {
-    date: "Dec 2024",
-    title: "Sistem Insentif Promotor Changhong",
-    slug: "sistem-insentif-promotor-changhong",
-  },
-  {
-    date: "Jan 2025",
-    title: "Marketplace Jasa Receh",
-    slug: "jasa-receh-marketplace",
-  },
-  {
-    date: "Nov 2024",
-    title: "Blog CMS Laravel – Pemenang Karir",
-    slug: "blog-cms-laravel",
+    date: "October 2025",
+    title: "Finalist – Web Development Competition at Rafatech 2025",
+    slug: "web-development",
   },
 ];
 
-export const WebsiteProjects = () => {
+export const Award = () => {
   return (
     <section className="max-w-5xl mx-auto py-12 border-t border-slate-100 dark:border-slate-800">
       <h2 className="text-2xl font-bold  mb-8 text-slate-900 dark:text-white">
-        Website Projects
+        Award
       </h2>
 
       <div className="flex flex-col gap-4">

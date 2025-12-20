@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Calendar, Linkedin, Moon, Sun } from "lucide-react";
 import { AnalystProject } from "../components/AnalystProject";
 import { WebsiteProjects } from "../components/WebsiteProjects";
+import { Award } from "../components/Award";
 
 // PERBAIKAN: Tambahkan tanda => setelah kurung ()
 const Home = () => {
@@ -39,39 +40,33 @@ const Home = () => {
           {/* Kolom Kiri: Teks */}
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-slate-800 dark:text-slate-100">
-              Hello, I'm Jason Chin.
+              Hello, I'm Septiawan.
             </h2>
 
             <div className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
               <p>
                 I'm a{" "}
                 <span className="font-bold text-slate-900 dark:text-white">
-                  certified expert
+                  student
                 </span>{" "}
-                in Notion, helping busy people like you be more organized and
-                productive.
+                at Universitas Multi Data Palembang and the founder of Pemenang
+                Karir, an agency that creates solutions to help businesses
+                transition from manual processes to digital systems.
               </p>
               <p className="mt-4">
-                I design and optimize Notion templates to be clutter-free, so
-                you can{" "}
+                I believe I can help your business grow, both in terms of{" "}
                 <span className="font-bold text-slate-900 dark:text-white">
-                  focus on what's important
-                </span>{" "}
-                and{" "}
+                  operational processes and profit
+                </span>
+                . Together with Pemenang Karir,{" "}
                 <span className="font-bold text-slate-900 dark:text-white">
-                  get things done
+                  let's grow and succeed together
                 </span>
                 .
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              {/* Tombol Book a Call */}
-              <button className="flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-sm dark:text-white cursor-pointer">
-                <Calendar size={18} />
-                <span className="font-medium">Book a call</span>
-              </button>
-
               {/* Tombol LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/mseptiawan/"
@@ -100,6 +95,7 @@ const Home = () => {
         <div className="mt-20 space-y-20">
           <AnalystProject />
           <WebsiteProjects />
+          <Award />
         </div>
       </div>
     </div>
