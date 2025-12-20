@@ -2,13 +2,30 @@ import React, { Suspense, lazy, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
+const projectModules = import.meta.glob("../content/projects/*.mdx");
+
 export const ProjectDetail = () => {
   const { projectId } = useParams();
-
-  // useMemo memastikan kita tidak mencoba mengimpor ulang kecuali ID berubah
+  console.log("AVAILABLE MDX:", Object.keys(projectModules));
+  console.log("REQUESTED:", `../content/projects/${projectId}.mdx`);
   const Content = useMemo(() => {
-    return lazy(() => import(`../content/${projectId}.mdx`));
+    const path = `../content/projects/${projectId}.mdx`;
+    const importer = projectModules[path];
+
+    if (!importer) {
+      return null;
+    }
+
+    return lazy(importer);
   }, [projectId]);
+
+  if (!Content) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-red-500">Project tidak ditemukan</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
@@ -20,7 +37,6 @@ export const ProjectDetail = () => {
           <ArrowLeft size={20} /> Kembali
         </Link>
 
-        {/* Tambahkan class 'prose' agar markdown punya style (font size, list, dll) */}
         <article className="prose dark:prose-invert prose-indigo max-w-none">
           <Suspense
             fallback={<div className="text-slate-500">Memuat detail...</div>}
