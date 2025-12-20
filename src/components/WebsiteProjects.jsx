@@ -19,7 +19,7 @@ export const WebsiteProjects = () => {
         {webProjects.map((project, index) => (
           <Link
             key={index}
-            // Ubah dari /projects/ menjadi /p
+            // Ubah dari /projects/ menjadi /
             to={`/project/${project.slug}`}
             className="group flex items-baseline gap-6 py-1"
           >
