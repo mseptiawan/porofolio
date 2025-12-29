@@ -33,7 +33,7 @@ export const WebsiteProjects = () => {
     <section className="w-full px-4 sm:px-6 md:px-0 max-w-5xl mx-auto py-12 border-t border-slate-100 dark:border-slate-800">
       {/* Heading */}
       <h2 className="text-xl sm:text-2xl font-bold mb-8 text-slate-900 dark:text-white">
-        Website Projects
+        Website and Design Projects
       </h2>
 
       <div className="flex flex-col gap-3 sm:gap-4">
