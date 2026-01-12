@@ -25,17 +25,17 @@ const webProjects = [
     date: "Sep 2025",
     title: "Blog CMS Laravel – Pemenang Karir",
     slug: "blog-cms-laravel",
-  },  {
+  },
+  {
     date: "Des 2025",
     title: "Cafe  – Pemenang Karir",
     slug: "cafe",
-  },  {
+  },
+  {
     date: "Des 2025",
     title: "Desaian Tamana Punti Kayu – Pemenang Karir",
     slug: "taman-punti-kayu",
   },
-
-
 ];
 
 export const WebsiteProjects = () => {
