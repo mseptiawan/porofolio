@@ -32,7 +32,7 @@ const Home = () => {
       <div className="max-w-5xl mx-auto">
         <header className="mb-16">
           <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">
-            Portfolio
+            Portofolio
           </h1>
         </header>
 
@@ -47,20 +47,24 @@ const Home = () => {
               <p>
                 I'm a{" "}
                 <span className="font-bold text-slate-900 dark:text-white">
-                  student
+                  Full-stack Web Developer
                 </span>{" "}
-                at Universitas Multi Data Palembang and the founder of Pemenang
-                Karir, an agency that creates solutions to help businesses
-                transition from manual processes to digital systems.
+                at Universitas Multi Data Palembang. I specialize in building
+                robust digital solutions using{" "}
+                <span className="font-bold text-slate-900 dark:text-white">
+                  Laravel, ReactJS, and Tailwind CSS
+                </span>
+                .
               </p>
               <p className="mt-4">
-                I believe I can help your business grow, both in terms of{" "}
+                I am passionate about helping businesses{" "}
                 <span className="font-bold text-slate-900 dark:text-white">
-                  operational processes and profit
+                  transition from manual processes to scalable digital systems
                 </span>
-                . Together with Pemenang Karir,{" "}
+                . With a focus on clean code and efficient API integration,
                 <span className="font-bold text-slate-900 dark:text-white">
-                  let's grow and succeed together
+                  {" "}
+                  let's build innovative solutions together
                 </span>
                 .
               </p>
@@ -83,7 +87,7 @@ const Home = () => {
           {/* Kolom Kanan: Gambar */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/images/profil.png"
+              src="/images/profile.jfif"
               alt="Profile Illustration"
               // Tambahkan drop-shadow agar gambar tanpa background terlihat lebih nyata
               className="w-full max-w-sm h-auto object-contain dark:brightness-90 transition-all drop-shadow-2xl"
@@ -93,7 +97,6 @@ const Home = () => {
 
         {/* Konten Tambahan */}
         <div className="mt-20 space-y-20">
-          <AnalystProject />
           <WebsiteProjects />
           <Award />
         </div>

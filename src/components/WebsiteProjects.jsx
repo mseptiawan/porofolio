@@ -26,6 +26,16 @@ const webProjects = [
     title: "Blog CMS Laravel – Pemenang Karir",
     slug: "blog-cms-laravel",
   },
+  {
+    date: "Jan 2025",
+    title: "Cafe Direktori",
+    slug: "cafe",
+  },
+  {
+    date: "Nov 2024",
+    title: "Design figma Taman punti kayu",
+    slug: "taman-punti-kayu",
+  },
 ];
 
 export const WebsiteProjects = () => {
